@@ -1,0 +1,13 @@
+{
+    "recommendations": [
+        "llvm-vs-code-extensions.vscode-clangd",
+        "ms-vscode.cpptools",
+        "marus25.cortex-debug",
+        "ms-vscode.cmake-tools",
+        "github.vscode-github-actions",
+        "eamodio.gitlens"
+    ],
+    "unwantedRecommendations": [
+
+    ]
+}

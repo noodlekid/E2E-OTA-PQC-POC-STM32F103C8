@@ -1,0 +1,31 @@
+{
+    //-------------------------------------------------------------------------
+    // Editor & Formatting Settings
+    //-------------------------------------------------------------------------
+    "[c]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+        "editor.wordBasedSuggestions": "off",
+        "editor.suggest.insertMode": "replace"
+    },
+    "editor.formatOnSave": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    //-------------------------------------------------------------------------
+    // Clangd Language Server Settings
+    //-------------------------------------------------------------------------
+    "clangd.arguments": [
+        "--compile-commands-dir=${workspaceFolder}/build",
+        "--header-insertion=iwyu",
+        "-j=12"
+    ],
+    //-------------------------------------------------------------------------
+    // CMake Tools Settings
+    //-------------------------------------------------------------------------
+    "cmake.configureOnOpen": true,
+    "cmake.sourceDirectory": "${workspaceFolder}",
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    //-------------------------------------------------------------------------
+    // Cortex-Debug Settings
+    //-------------------------------------------------------------------------
+    "cortex-debug.openocdPath": "openocd"
+}

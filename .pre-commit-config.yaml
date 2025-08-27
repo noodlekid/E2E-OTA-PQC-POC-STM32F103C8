@@ -1,0 +1,15 @@
+# .pre-commit-config.yaml
+repos:
+-   repo: https://github.com/pre-commit/mirrors-clang-format
+    rev: v14.0.0
+    hooks:
+    -   id: clang-format
+        types: [c, c++]
+        files: ^(src/|inc/|lib/|Core/Src/sysmem.c|Core/Src/syscalls.c|Core/Src/system_stm32f1xx.c)
+
+-   repo: https://github.com/pocc/pre-commit-hooks
+    rev: v1.3.5
+    hooks:
+    -   id: clang-tidy
+        args: ["-p=build"]
+        files: ^(src/|inc/|lib/)

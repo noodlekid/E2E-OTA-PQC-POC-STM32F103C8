@@ -1,0 +1,11 @@
+Checks: '-*,
+          bugprone-*,
+          -bugprone-reserved-identifier,
+          clang-analyzer-*,
+          performance-*,
+          portability-*,
+          modernize-*,
+          readability-*',
+          -readability-magic-numbers'
+WarningsAsErrors: '*'
+HeaderFilterRegex: 'src/.*|inc/.*'

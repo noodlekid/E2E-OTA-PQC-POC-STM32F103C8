@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cortex Debug",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/PQC-POC-STM32-F103C8.elf",
+            "svdFile": "${workspaceFolder}/debug/STM32F103.svd",
+            "runToEntryPoint": "main",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f1x.cfg"
+            ],
+            "showDevDebugOutput": "parsed",
+            "swoConfig": {
+                "enabled": false
+            },
+            "preLaunchTask": "Build"
+        }
+    ]
+}
